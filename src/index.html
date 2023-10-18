@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma e subtração</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="@@CSS">
+</head>
+<body>
+    <main class="container">
+        <h1>Calculadora de somar e subtrair</h1>
+        <div>
+            <h3>Vamos somar ?</h3>
+            <form id="mais">
+                <div>
+                    <label for="somar-primeiro-numero">Digite um numero:</label>
+                    <input type="number" id="somar-primeiro-numero" required min="1">
+                    <label for="somar-segundo-numero">Digite um numero:</label>
+                    <input type="number" id="somar-segundo-numero" required min="1">
+                </div>
+                <button type="submit">Somar agora</button>
+            </form>
+            <div class="resultado-mais" id="resultado">
+                O resultado é: <span id="soma-resultado"></span>
+            </div>
+        </div>
+        <div class="subtrair">
+            <h3>Vamos subtrair ?</h3>
+            <form id="menos">
+                <div>
+                    <label for="subtrair-primeiro-numero">Digite um numero:</label>
+                    <input type="number" id="subtrair-primeiro-numero" required min="1">
+                    <label for="subtrair-segundo-numero">Digite um numero:</label>
+                    <input type="number" id="subtrair-segundo-numero" required min="1">
+                </div>
+                <button type="submit">Subtrair agora</button>
+            </form>
+            <div class="resultado-menos" id="resultado">
+                O resultado é: <span id="subitracao-resultado"></span>
+            </div>
+        </div>
+    </main>
+    <script src="@@JS"></script>
+</body>
+</html>
